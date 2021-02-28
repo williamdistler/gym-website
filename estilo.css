@@ -1,0 +1,138 @@
+@charset "utf8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+header div{
+    display: inline-block;
+}
+header{
+    background-color: black;
+    height: 50px;
+}
+header .logo img{
+    width: 50px;
+}
+header nav{
+    display: inline-block;
+    width: calc(100% - 100px);
+    vertical-align: top;
+}
+header nav ul{
+    list-style-type: none;
+    width: 100%;
+    color: white;
+    vertical-align: super;
+}
+header nav ul li{
+    float: left;
+    width: 25%;
+    font-size: large;
+    text-align: center;
+}
+.menu{
+    display: none;
+}
+section{
+    padding: 50px;
+}
+section .imagem{
+    text-align: center;
+}
+section .blocos{
+    width: calc(25% - 50px);
+    margin: 20px;
+    border: 1px solid #ebf0f2;
+    height: 360px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+section .blocos img{
+    width: 100%;
+    height: 150px;
+}
+section .blocos .txt{
+    color: white;
+    font-size: large;
+    font-weight: bold;   
+    height: 120px;
+    margin: 10px;
+}
+section .blocos .tip{
+    color: gray;
+    margin: 10px;
+}
+section .blocos .dat{
+    color: white;
+}
+@media screen and (max-width: 1200px){
+    header nav{
+        display: none;
+    }
+    section .imagem img{
+        width: 100%;
+    }
+    section .blocos{
+        width: calc(25% - 50px);
+        height: auto;
+    }
+    section .blocos .txt{
+        height: 120px;
+    }
+    .menu{
+        display: inline-block;
+        float: right;
+    }
+    header .logo img{
+        width: 75px;
+        height: 75px;
+    }
+    .menu img{
+        width: 75px;
+        height: 75px;
+    }
+}
+@media screen and (max-width: 1024px){
+    section .blocos{
+        width: calc(50% - 50px);
+        height: auto;
+    }
+}
+@media screen and (max-width: 800px){
+    section .blocos{
+        width: calc(50% - 50px);
+        height: auto;
+    }
+}
+@media screen and (max-width: 600px){
+    header nav{
+        display: none;
+    }
+    section{
+        padding: 5px;
+    }
+    section .imagem img{
+        width: 100%;
+    }
+    section .blocos{
+        display: block;
+        width: 100%;
+        margin: 10px 5px 10px 5px;
+        height: auto;
+        border-bottom: 1px solid white;
+    }
+    header .logo img{
+        width: 50px;
+        height: 50px;
+    }
+    .menu img{
+        width: 50px;
+        height: 50px;
+    }
+}
+}
